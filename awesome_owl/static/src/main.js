@@ -4,10 +4,13 @@ import { browser } from "@web/core/browser/browser";
 import { mount, whenReady } from "@odoo/owl";
 import { Playground } from "./playground";
 import { templates } from "@web/core/assets";
+import { Counter } from "./counter/counter";
 
 // Mount the Playground component when the document.body is ready
 whenReady( () => {
     mount(Playground, document.body, { templates, dev: true, name: "Owl Tutorial" });
+    mount(Counter, document.body, { templates, dev: true, name: "Owl Tutorial 1" });
+    mount(Counter, document.body, { templates, dev: true, name: "Owl Tutorial 2" });
 });
 
 
